@@ -10,13 +10,11 @@ import { MainComponent } from './main/main.component';
 import { UserComponent } from './user/user.component';
 import { Routes, RouterModule } from '@angular/router';
 import { TrainComponent } from './train/train.component';
-import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
   { path: 'user', component: UserComponent},
   { path: 'train', component: TrainComponent},
-  { path: 'home', component: MainComponent},
-  { path: 'chat/:id', component: ChatComponent},
+  { path: 'home', component: MainComponent}
 ]
 
 @NgModule({
@@ -24,8 +22,7 @@ const routes: Routes = [
     AppComponent,
     MainComponent,
     UserComponent,
-    TrainComponent,
-    ChatComponent
+    TrainComponent
   ],
   imports: [
     BrowserModule,
